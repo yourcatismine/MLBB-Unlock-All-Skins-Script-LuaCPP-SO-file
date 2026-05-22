@@ -1,0 +1,42 @@
+
+
+
+
+rule CXX_COMPILER__skinhook_unscanned_RelWithDebInfo
+  depfile = $DEP_FILE
+  deps = gcc
+  command = ${LAUNCHER}${CODE_CHECK}C:\Users\User\system\Documents\android-ndk-r27d\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 $DEFINES $INCLUDES $FLAGS -MD -MT $out -MF $DEP_FILE -o $out -c $in
+  description = Building CXX object $out
+
+
+
+rule CXX_SHARED_LIBRARY_LINKER__skinhook_RelWithDebInfo
+  command = C:\WINDOWS\system32\cmd.exe /C "$PRE_LINK && C:\Users\User\system\Documents\android-ndk-r27d\toolchains\llvm\prebuilt\windows-x86_64\bin\clang++.exe --target=aarch64-none-linux-android21 -fPIC $LANGUAGE_COMPILE_FLAGS $ARCH_FLAGS $LINK_FLAGS -shared $SONAME_FLAG$SONAME -o $TARGET_FILE $in $LINK_PATH $LINK_LIBRARIES && $POST_BUILD"
+  description = Linking CXX shared library $TARGET_FILE
+  restat = $RESTAT
+
+
+
+rule CUSTOM_COMMAND
+  command = $COMMAND
+  description = $DESC
+
+
+
+rule RERUN_CMAKE
+  command = C:\Strawberry\c\bin\cmake.exe --regenerate-during-build -SC:\Users\User\Downloads\skinhook -BC:\Users\User\Downloads\skinhook\build
+  description = Re-running CMake...
+  generator = 1
+
+
+
+rule CLEAN
+  command = C:\Strawberry\c\bin\ninja.exe $FILE_ARG -t clean $TARGETS
+  description = Cleaning all built files...
+
+
+
+rule HELP
+  command = C:\Strawberry\c\bin\ninja.exe -t targets
+  description = All primary targets available:
+

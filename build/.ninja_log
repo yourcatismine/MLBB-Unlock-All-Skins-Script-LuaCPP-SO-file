@@ -1,0 +1,7 @@
+# ninja log v6
+371	533	8009001859598440	libskinhook.so	6c1562e807ea5885
+35	758	8009005361286895	build.ninja	ad59240fb16a9e2f
+17	365	8009001856079155	CMakeFiles/skinhook.dir/src/main.cpp.o	574543e4c4e70ddd
+11	221	8009005361286895	build.ninja	ad59240fb16a9e2f
+27	163	8009005361968237	CMakeFiles/skinhook.dir/src/main_minimal.cpp.o	4d4c00df4aaff2e5
+165	314	8009005363340679	libskinhook.so	bb9c9a222f6c727a

@@ -1,0 +1,94 @@
+
+
+
+
+
+ninja_required_version = 1.5
+
+
+
+CONFIGURATION = RelWithDebInfo
+
+
+
+include CMakeFiles/rules.ninja
+
+
+
+cmake_ninja_workdir = C$:/Users/User/Downloads/skinhook/build/
+
+
+
+build cmake_object_order_depends_target_skinhook: phony || .
+
+build CMakeFiles/skinhook.dir/src/main_minimal.cpp.o: CXX_COMPILER__skinhook_unscanned_RelWithDebInfo C$:/Users/User/Downloads/skinhook/src/main_minimal.cpp || cmake_object_order_depends_target_skinhook
+  DEFINES = -Dskinhook_EXPORTS
+  DEP_FILE = CMakeFiles\skinhook.dir\src\main_minimal.cpp.o.d
+  FLAGS = -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -O2 -g -DNDEBUG -std=gnu++17 -fPIC
+  OBJECT_DIR = CMakeFiles\skinhook.dir
+  OBJECT_FILE_DIR = CMakeFiles\skinhook.dir\src
+
+
+
+
+
+build libskinhook.so: CXX_SHARED_LIBRARY_LINKER__skinhook_RelWithDebInfo CMakeFiles/skinhook.dir/src/main_minimal.cpp.o
+  LANGUAGE_COMPILE_FLAGS = -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat -Werror=format-security -fexceptions -frtti -stdlib=libc++ -O2 -g -DNDEBUG
+  LINK_FLAGS = -Wl,--build-id=sha1 -Wl,--no-rosegment -Wl,--no-undefined-version -Wl,--fatal-warnings -Wl,--gc-sections -Qunused-arguments -Wl,--no-undefined
+  LINK_LIBRARIES = -llog  -ldl   -static-libstdc++ -latomic -lm
+  OBJECT_DIR = CMakeFiles\skinhook.dir
+  POST_BUILD = cd .
+  PRE_LINK = cd .
+  SONAME = libskinhook.so
+  SONAME_FLAG = -Wl,-soname,
+  TARGET_FILE = libskinhook.so
+  TARGET_PDB = skinhook.so.dbg
+
+
+
+build CMakeFiles/edit_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\Downloads\skinhook\build && C:\Strawberry\c\bin\cmake.exe -E echo "No interactive CMake dialog available.""
+  DESC = No interactive CMake dialog available...
+  restat = 1
+
+build edit_cache: phony CMakeFiles/edit_cache.util
+
+
+
+build CMakeFiles/rebuild_cache.util: CUSTOM_COMMAND
+  COMMAND = C:\WINDOWS\system32\cmd.exe /C "cd /D C:\Users\User\Downloads\skinhook\build && C:\Strawberry\c\bin\cmake.exe --regenerate-during-build -SC:\Users\User\Downloads\skinhook -BC:\Users\User\Downloads\skinhook\build"
+  DESC = Running CMake to regenerate build system...
+  pool = console
+  restat = 1
+
+build rebuild_cache: phony CMakeFiles/rebuild_cache.util
+
+
+build skinhook: phony libskinhook.so
+
+
+
+
+build all: phony libskinhook.so
+
+
+
+
+build build.ninja: RERUN_CMAKE | C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/Clang-C.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/Clang-CXX.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/Clang.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Clang-C.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Clang-CXX.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Clang.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Common.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Initialize.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Linux.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/UnixPaths.cmake C$:/Users/User/Downloads/skinhook/CMakeLists.txt C$:/Users/User/Downloads/skinhook/android.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/flags.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/post/Android-Clang.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/post/Android.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/pre/Android-Clang.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/pre/Android-Initialize.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/pre/Android.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake
+  pool = console
+
+
+
+build C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeCInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeCXXInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeCommonLanguageInclude.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeGenericSystem.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeInitializeConfigs.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeLanguageInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeSystemSpecificInformation.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/CMakeSystemSpecificInitialize.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/CMakeCommonCompilerMacros.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/Clang-C.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/Clang-CXX.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/Clang.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Compiler/GNU.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Clang-C.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Clang-CXX.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Clang.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Common.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android-Initialize.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Android.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Linux-Initialize.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/Linux.cmake C$:/Strawberry/c/share/cmake-3.29/Modules/Platform/UnixPaths.cmake C$:/Users/User/Downloads/skinhook/CMakeLists.txt C$:/Users/User/Downloads/skinhook/android.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/flags.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/post/Android-Clang.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/post/Android.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/pre/Android-Clang.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/pre/Android-Initialize.cmake C$:/Users/User/system/Documents/android-ndk-r27d/build/cmake/hooks/pre/Android.cmake CMakeCache.txt CMakeFiles/3.29.2/CMakeCCompiler.cmake CMakeFiles/3.29.2/CMakeCXXCompiler.cmake CMakeFiles/3.29.2/CMakeSystem.cmake: phony
+
+
+
+build clean: CLEAN
+
+
+
+build help: HELP
+
+
+
+default all
